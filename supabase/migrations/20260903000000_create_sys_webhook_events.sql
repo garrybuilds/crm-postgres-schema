@@ -1,7 +1,7 @@
 -- ============================================================
 -- Migration: 20260903000000_create_sys_webhook_events.sql
 -- Speed-to-Lead Bot (spec 03) — raw webhook audit + notification queue
--- OPERATOR RUNS THIS MANUALLY in the Supabase SQL Editor (standing rule).
+-- Run this manually in the Supabase SQL Editor (standing rule).
 --
 -- Why: the Edge Function audit-logs every Smartlead event BEFORE dedupe/
 -- classify/write (spec §4.2). sys_processed_webhooks (already live) is the
