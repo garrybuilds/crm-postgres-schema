@@ -5,7 +5,7 @@
 -- Declarative workflow rules: when entity event fires + conditions match,
 -- execute actions (update field, send email, create task, webhook).
 --
--- Garry runs this in the Supabase SQL Editor manually.
+-- Run this manually in the Supabase SQL Editor.
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS sys_workflows (

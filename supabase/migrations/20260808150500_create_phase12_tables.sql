@@ -2,7 +2,7 @@
 -- Migration: 20260808150500_create_phase12_tables.sql
 -- Phase 12 — Future (i18n, multi-currency, plugins, backup)
 -- ============================================================
--- Garry runs this in the Supabase SQL Editor manually.
+-- Run this manually in the Supabase SQL Editor.
 -- ============================================================
 
 -- Multi-currency

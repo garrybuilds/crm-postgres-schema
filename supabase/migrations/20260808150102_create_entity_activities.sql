@@ -10,7 +10,7 @@
 --
 -- Also adds a trigger to auto-log record changes on deals and companies.
 --
--- Garry runs this in the Supabase SQL Editor manually.
+-- Run this manually in the Supabase SQL Editor.
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS crm_entity_activities (

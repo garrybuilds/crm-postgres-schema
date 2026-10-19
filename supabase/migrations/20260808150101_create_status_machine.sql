@@ -6,7 +6,7 @@
 -- The Python StatusUpdater service mirrors this logic for app-side use.
 -- No new tables — this is a service-layer pattern with a DB function.
 --
--- Garry runs this in the Supabase SQL Editor manually.
+-- Run this manually in the Supabase SQL Editor.
 -- ============================================================
 
 -- Add computed_status column to deals

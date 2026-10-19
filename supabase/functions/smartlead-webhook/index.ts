@@ -6,13 +6,14 @@
 //
 // HARD RULES (spec §4 storage + CRM touchpoints):
 //   - NO creates of contacts/companies/deals. Contact lookup is READ-ONLY.
-//   - NO deal stage mutations (spec: "no status/field mutations without Garry").
+//   - NO deal stage mutations (spec: no status/field mutations without operator approval).
 //   - NO outbound sends of any kind. This function has zero send capability.
 //   - Dedupe key (external_id, activity_type) enforced BEFORE notify/write;
 //     DB unique index idx_activities_external_dedup is the backstop.
 //   - Fail toward attention: unclassifiable reply → treated as positive.
 //
-// Deploy (staged — Garry runs; config.toml has verify_jwt=false):
+// Deploy (staged — run by the deployment operator; the receiver is
+// authenticated by its webhook secret, which is required and fail-closed):
 //   supabase functions deploy smartlead-webhook --project-ref <your-project-ref>
 //   supabase secrets set SMARTLEAD_WEBHOOK_SECRET=<secret>   (then append ?secret=… to webhook URL)
 //

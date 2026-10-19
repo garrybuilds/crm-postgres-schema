@@ -2,7 +2,7 @@
 -- Migration: 20260808150300_create_reports_and_templates.sql
 -- Phase 9 — Reports, Dashboard Cards, Print Templates
 -- ============================================================
--- Garry runs this in the Supabase SQL Editor manually.
+-- Run this manually in the Supabase SQL Editor.
 -- ============================================================
 
 -- Reports

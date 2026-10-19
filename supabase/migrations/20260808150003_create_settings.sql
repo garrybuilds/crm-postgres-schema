@@ -4,7 +4,7 @@
 -- ============================================================
 -- Key-value settings store with JSONB values.
 -- Used for CRM configuration: auto-close days, duplicate check fields, etc.
--- Garry runs this in the Supabase SQL Editor manually.
+-- Run this manually in the Supabase SQL Editor.
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS sys_settings (

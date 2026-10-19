@@ -16,7 +16,7 @@
 -- data model. For now, the tenant helpers return true for all entities
 -- (single-tenant compatibility mode) so existing RLS policies still work.
 --
--- Garry runs this in the Supabase SQL Editor manually.
+-- Run this manually in the Supabase SQL Editor.
 -- ============================================================
 
 -- ============================================================

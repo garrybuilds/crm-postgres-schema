@@ -7,7 +7,7 @@
 -- Layer 3: Row-level security (Supabase RLS — already in place)
 --
 -- Replaces the flat 50+ boolean ALL_PERMS array.
--- Garry runs this in the Supabase SQL Editor manually.
+-- Run this manually in the Supabase SQL Editor.
 -- ============================================================
 
 -- ============================================================

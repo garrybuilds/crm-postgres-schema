@@ -3,7 +3,7 @@
 -- Phase 5.4 — Saved Views System
 -- ============================================================
 -- Persists filter+sort+column layouts per user per entity.
--- Garry runs this in the Supabase SQL Editor manually.
+-- Run this manually in the Supabase SQL Editor.
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS sys_saved_views (

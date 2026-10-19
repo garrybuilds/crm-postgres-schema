@@ -6,7 +6,7 @@
 -- All CRM entities support custom fields without schema changes.
 -- Typed columns preserve type safety (Krayin pattern).
 --
--- Garry runs this in the Supabase SQL Editor manually.
+-- Run this manually in the Supabase SQL Editor.
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS sys_custom_attributes (

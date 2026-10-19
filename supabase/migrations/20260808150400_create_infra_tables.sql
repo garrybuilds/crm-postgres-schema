@@ -2,7 +2,7 @@
 -- Migration: 20260808150400_create_infra_tables.sql
 -- Phase 11 — File Management, Notifications, Webhooks, Integrations
 -- ============================================================
--- Garry runs this in the Supabase SQL Editor manually.
+-- Run this manually in the Supabase SQL Editor.
 -- ============================================================
 
 -- Files (metadata for uploads to Supabase Storage)

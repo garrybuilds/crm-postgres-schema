@@ -3,7 +3,7 @@
 -- Phase 11.6 — CSS Custom Property Theming
 -- ============================================================
 -- Stores per-tenant theme overrides.
--- Garry runs this in the Supabase SQL Editor manually.
+-- Run this manually in the Supabase SQL Editor.
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS sys_theme_overrides (

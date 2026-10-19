@@ -3,10 +3,10 @@
 // Public lead-capture endpoint. Turnstile-gated. Writes to public.lead_captures
 // via direct Postgres (npm:postgres@3.4.4).
 //
-// HOME (G decision, 2026-09-10): scorecard quiz leads are SALES data — this
-// function and the lead_captures table live in the maf-crm project
-// (<your-project-ref>). The portal (MAF-Deploy) is client-first, post-sale
-// only; migrated from functions/lead-capture-submit in the maf-deploy repo.
+// HOME (operator decision, 2026-09-10): scorecard quiz leads are SALES data — this
+// function and the lead_captures table live in the CRM project
+// (<your-project-ref>). The portal is client-first, post-sale
+// only; migrated from the original portal-side lead-capture function.
 //
 // Env: SUPABASE_DB_URL (required, fail-closed), TURNSTILE_SECRET (required,
 // fail-closed).
