@@ -40,8 +40,9 @@ ALTER TABLE crm_user_agents
 --   * The profile_url CHECK (~ '^https://[a-z0-9.-]+\.ts\.net(:443|:8443)?/crm-agents/[a-z0-9-]+$')
 --     and api_port CHECK (8653..65535) still hold: real profiles must mount
 --     in the same port range and path shape the router/DB already enforce.
---     maf's API server was moved to a dedicated port for this reason (the previous port is held
---     by the <internal-profile> profile).
+--     the maf profile's API server was moved to a dedicated port in that
+--     range for this reason (its previous port is held by another internal
+--     profile).
 --   * RLS is untouched: own-row SELECT via auth.jwt()->>'email', admin-only
 --     writes (4 policies confirmed live).
 --   * Rollback (if ever needed): re-add the three single-column UNIQUEs —
