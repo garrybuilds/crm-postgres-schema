@@ -1,8 +1,8 @@
--- lead_captures — CRM home (operator decision 2026-09-10: scorecard quiz leads are
--- SALES data; the portal/the deploy portal is client-first, post-sale only).
--- Mirrors the live table in the the deploy portal project (19 rows migrated
--- separately via SQL); RLS + anon INSERT mirror supabase-setup.sql from
--- garrybuilds/<internal-repo>.
+-- lead_captures — CRM home (operator decision 2026-09-10: scorecard quiz
+-- leads are SALES data; the portal is client-first, post-sale only).
+-- Mirrors the live table in the deploy-portal project (19 rows migrated
+-- separately via SQL); RLS + anon INSERT mirror the public scorecard
+-- landing setup SQL.
 
 CREATE TABLE IF NOT EXISTS public.lead_captures (
   id SERIAL PRIMARY KEY,

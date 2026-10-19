@@ -16,7 +16,7 @@
 --   2026-09-04 (see brain: crm-design-refactor/HOTFIX-...-2026-09-04.sql).
 --   This migration lands the same fix in the repo so FRESH environments
 --   get the corrected function from the start. On the live DB this is a
---   no-op: CREATE OR REPLACE with the identical body the operator already applied.
+--   no-op: CREATE OR REPLACE with the identical body already applied by the operator.
 --
 -- SAFE NOTES
 --   - CREATE OR REPLACE only touches the trigger function; existing
