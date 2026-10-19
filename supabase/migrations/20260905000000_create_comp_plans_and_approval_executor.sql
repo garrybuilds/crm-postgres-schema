@@ -205,7 +205,7 @@ REVOKE ALL ON FUNCTION public.supersede_comp_plan(UUID, NUMERIC, TEXT) FROM PUBL
 GRANT EXECUTE ON FUNCTION public.supersede_comp_plan(UUID, NUMERIC, TEXT) TO authenticated;
 
 -- The initial owner plan is a decided business configuration. It is seeded
--- only when no active Garry plan exists, so reapplying is harmless.
+-- only when no active owner plan exists, so reapplying is harmless.
 INSERT INTO public.crm_comp_plans (
   owner_email, owner_name, rate_pct, tier_label, effective_from
 )
