@@ -392,7 +392,7 @@ BEGIN
       v_detail := format('Task created: %s', v_task_id);
 
     WHEN 'send_email' THEN
-      -- External communications remain blocked without G's explicit send-it.
+      -- External communications remain blocked without the operator's explicit send-it.
       v_detail := 'Awaiting explicit send-it from G — email drafted, not sent';
 
     ELSE

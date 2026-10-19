@@ -1,7 +1,7 @@
 -- ============================================================
 -- MAF CRM — Funnel Tracking Views
 -- Deploy via Supabase SQL Editor (copy + paste + Run)
--- Source: brain/2_Areas/maf/areas/operations/cold-email-system/funnel-tracking-dashboard.md
+-- Source: internal funnel-tracking notes (vault path removed)
 -- ============================================================
 
 -- ============================================================

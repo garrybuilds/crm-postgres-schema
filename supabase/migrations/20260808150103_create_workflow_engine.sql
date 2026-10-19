@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS sys_workflows (
   entity_type TEXT NOT NULL,          -- 'lead', 'deal', 'company'
   trigger_event TEXT NOT NULL,        -- 'on_create', 'on_update', 'on_status_change'
   conditions JSONB NOT NULL DEFAULT '[]',  -- [{"field": "stage", "operator": "eq", "value": "lead"}, {"logic": "AND"}]
-  actions JSONB NOT NULL DEFAULT '[]',     -- [{"type": "update_field", "field": "assigned_to", "value": "garry"}, {"type": "send_email", "template": "welcome"}]
+  actions JSONB NOT NULL DEFAULT '[]',     -- [{"type": "update_field", "field": "assigned_to", "value": "assigned-user"}, {"type": "send_email", "template": "welcome"}]
   is_active BOOLEAN DEFAULT true,
   created_at TIMESTAMPTZ DEFAULT now(),
   updated_at TIMESTAMPTZ DEFAULT now()

@@ -35,7 +35,7 @@
 
 import postgres from "npm:postgres@3.4.4";
 
-// Service-auth path (2026-09-08, G decision B): trusted server relays (the
+// Service-auth path (2026-09-08, operator decision B): trusted server relays (the
 // scorecard quiz's Vercel function) call this function server-to-server.
 // A constant-time secret check replaces the browser captcha wall — the
 // relay has ALREADY verified Turnstile itself. All other protections
