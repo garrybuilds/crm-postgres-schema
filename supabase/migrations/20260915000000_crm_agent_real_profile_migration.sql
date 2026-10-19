@@ -19,13 +19,13 @@
 -- Data changes applied alongside (NOT in this file — keys never enter git):
 --   * Old rows (agent@example.com, founder@example.com) deleted.
 --   * Two rows inserted: founder@example.com and agent@example.com, both
---     profile_name='maf', profile_url='https://<internal-endpoint>/crm-agents/maf',
---     api_port=8656, api_key=<maf profile's API_SERVER_KEY> (48 chars).
---   * Read-back verified: exactly 2 rows, both → maf:8656.
+--     profile_name='maf', profile_url='<internal-agent-api-endpoint>/crm-agents/maf',
+--     api_port=<maf-profile-port>, api_key=<maf profile's API_SERVER_KEY> (48 chars).
+--   * Read-back verified: exactly 2 rows, both → the maf profile API.
 --
 -- Live verification of the full chain (2026-09-15):
 --   POST <row_url>/v1/chat/completions with the row key → HTTP 200, real
---   agent turn on the maf profile through router :3400 → Funnel 443.
+--   agent turn on the maf profile through the internal router.
 
 ALTER TABLE crm_user_agents
   DROP CONSTRAINT IF EXISTS crm_user_agents_user_email_key;
@@ -40,7 +40,7 @@ ALTER TABLE crm_user_agents
 --   * The profile_url CHECK (~ '^https://[a-z0-9.-]+\.ts\.net(:443|:8443)?/crm-agents/[a-z0-9-]+$')
 --     and api_port CHECK (8653..65535) still hold: real profiles must mount
 --     in the same port range and path shape the router/DB already enforce.
---     maf's API server was moved 8643 → 8656 for this reason (8653 is held
+--     maf's API server was moved to a dedicated port for this reason (the previous port is held
 --     by the <internal-profile> profile).
 --   * RLS is untouched: own-row SELECT via auth.jwt()->>'email', admin-only
 --     writes (4 policies confirmed live).

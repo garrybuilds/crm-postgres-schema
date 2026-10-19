@@ -1,7 +1,7 @@
 -- ============================================================
 -- MAF CRM — Funnel Tracking Views
 -- Deploy via Supabase SQL Editor (copy + paste + Run)
--- Source: internal funnel-tracking notes
+-- Source: internal funnel-tracking notes (vault path removed)
 -- ============================================================
 
 -- ============================================================
