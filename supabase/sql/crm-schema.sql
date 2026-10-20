@@ -4,12 +4,15 @@
 -- Project: maf-crm (new standalone Supabase project)
 -- Run in: Supabase Dashboard → SQL Editor → New Query
 -- Created: 2026-07-24
--- Updated: 2026-07-27 — standalone project, persona gaps closed
+-- Updated: 2026-07-27 — standalone project, persona gaps closed;
+--   2026-10-20 — operator-defaults note added
 -- Note (2026-10-20): the 'garry' DEFAULTs on assignee columns and the
---   comp-plan seed row are DELIBERATE operator-assignment semantics —
---   unassigned rows route to the operator in a solo-run CRM — not
---   leftover test data. Do not "clean" them without a coordinated app
---   change. (Owner decision, recorded in the repo-audit 2026-10-19.)
+--   comp-plan seed row (migrations/
+--   20260905000000_create_comp_plans_and_approval_executor.sql) are
+--   DELIBERATE operator-assignment semantics — unassigned rows route to
+--   the operator in a solo-run CRM — not leftover test data. Do not
+--   "clean" them without a coordinated app change. (Owner decision,
+--   recorded in the repo-audit 2026-10-19.)
 --
 -- STANDALONE PROJECT:
 --   This is a SEPARATE Supabase project from the MSP portal.
